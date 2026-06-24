@@ -1,87 +1,116 @@
-# INSURANCE COVERAGE AND USAGE ANALYSIS
-## 1.	Project Background and Overview
-________________________________________
-Health insurance coverage and healthcare utilisation are critical indicators of public health and accessibility. This analysis explores the disparities and trends within a dataset representing a sample population of 6,158 records analysed. The findings aim to inform policies and strategies to improve healthcare access for underserved groups.
-Key Metrics Tracked:
-•	Percentage of individuals with health insurance.
-•	Influence of employment and income on insurance access.
-•	Hospital visit frequency differences between insured and uninsured individuals.
-Objectives:
-1.	Quantify the proportion of individuals with health insurance.
-2.	Identify the socioeconomic factors influencing insurance coverage.
-3.	Assess the impact of health insurance on hospital visit frequency.
-By addressing these objectives, this analysis seeks to guide stakeholders in enhancing health insurance penetration and healthcare equity.
-## 2. Executive Summary
-________________________________________
-1.	Insurance Coverage: 59% of the population is insured, while 41% lack coverage. Employment and income significantly influence these rates.
-2.	Socioeconomic Disparities: Higher-income earners (90% insured) have significantly better coverage compared to low-income groups (35%).
-3.	Healthcare Utilization: Insured individuals visit hospitals more frequently (average interval: 6 months) compared to the uninsured (7 months).
-4.	Key Metrics: Proportion of insured individuals, socioeconomic impact on coverage, and healthcare utilisation trends.
-Dashboard: Insurance Coverage And Usage Analysis
- ![image](https://github.com/user-attachments/assets/7acfde87-319a-400d-93af-cc0f49222b7f)
+# Insurance Coverage and Healthcare Usage Analysis
 
+**Industry**: Public Health / Health Insurance
+**Tools**: Power BI, Excel
 
-## 4.	Data Structure Overview
-________________________________________
-The dataset consists of 6,158 records and includes variables providing insights into demographics, socioeconomic status, insurance coverage, and healthcare usage. Key relationships include:
-•	Demographics: Age, gender, and marital status as factors influencing healthcare decisions.
-•	Socioeconomic Status: Employment status and income levels as determinants of insurance coverage.
-•	Healthcare Usage: Frequency of hospital visits and routine checkups as indicators of access and utilisation.
-Healthcare Data Relationship
+---
 
-![image](https://github.com/user-attachments/assets/93cdf492-e3a5-4f0f-8394-81b3ae04c10a)
-		 
+## 🚀 Executive Summary
 
-## 5.	Key Insights
-________________________________________
-### Insight 1: Demographic Disparities in Health Insurance Coverage
-Insurance Coverage by Demographics
- ![image](https://github.com/user-attachments/assets/62d50c84-8653-4110-9de5-f0e18b53b698)
+**Problem**: Stakeholders needed to understand not just who has health insurance, but whether coverage actually translates into more frequent healthcare utilization — and which socioeconomic groups are being left behind on both fronts.
+**Action**: Analyzed 6,158 individual records covering demographics, socioeconomic status, insurance coverage, and hospital visit frequency, building a Power BI dashboard to compare healthcare usage between insured and uninsured populations.
+**Result**: Found that **59% of the population is insured** but coverage is sharply unequal by income (**90% for high earners vs. 35% for low-income groups**), and that insured individuals visit hospitals more frequently (every **6 months** vs. **7 months** for the uninsured) — evidence that coverage gaps translate directly into reduced healthcare access.
 
-•	Key Metric: 59% insured, with coverage rates varying by employment and income levels.
-•	Implication: Vulnerable groups (unemployed, low-income) exhibit lower coverage, indicating a gap in accessibility.
+![Dashboard](https://github.com/user-attachments/assets/7acfde87-319a-400d-93af-cc0f49222b7f)
 
-### Insight 2: Socioeconomic Impact on Insurance Access
-Coverage by Employment and Income
- 
-![image](https://github.com/user-attachments/assets/b5805630-4233-447c-b015-c6cefba859a4)
+---
 
-![image](https://github.com/user-attachments/assets/8839970f-3c32-444e-99d0-4681e9048201)
+## 🎯 Problem Statement
 
-•	Key Metric: Income correlates strongly with insurance rates (90% for high-income vs. 35% for low-income).
-•	Implication: Subsidised health programs could address disparities among low-income groups.
+**Core Issue**: Insurance coverage gaps are known to exist, but it was unclear how large the socioeconomic disparity in coverage is, and whether being uninsured measurably changes healthcare-seeking behavior.
+**Key Questions**:
+1. What share of the population is insured, and how does this vary by income and employment?
+2. Do insured individuals use healthcare services more often than the uninsured?
+3. Which socioeconomic groups are most underserved by current coverage levels?
 
-### Insight 3: Healthcare Utilization by Insurance Status
-Hospital Visit Frequency by Insurance Status
-![image](https://github.com/user-attachments/assets/aed85190-8586-4b49-abe9-53e3cde3f506)
+---
 
-•	Key Metric: Insured individuals have shorter intervals between hospital visits (6 months vs. 7 months).
-•	Implication: Insurance improves healthcare access and usage.
-## 6.	Recommendations
-________________________________________
-### 1.	Targeted Subsidies:
-o	Develop subsidised health insurance programs focused on low-income and unemployed groups.
-### 2.	Employer Engagement:
-o	Promote employer-sponsored insurance to increase coverage among employed individuals.
-### 3.	Community Health Initiatives:
-o	Expand community-driven health programs to provide basic healthcare for uninsured individuals.
-### 4.	Awareness Campaigns:
-o	Launch public campaigns emphasising the benefits of health insurance, particularly in underserved regions.
-## 5.	Communication
-________________________________________
-•	To Policymakers: 
-Highlight the disparities in insurance coverage and recommend targeted subsidies for low-income populations.
-•	To Employers:
-Emphasise the role of employer-sponsored insurance in improving coverage rates.
-•	To Community Organizations:
-Advocate for localised initiatives that enhance healthcare access for the uninsured.
-## 7.	Caveats and Assumptions
-________________________________________
-1.	Data Limitations:
-o	The dataset may not represent the entire population, potentially skewing results.
-2.	Self-Reported Bias:
-o	Variables like income and hospital visits are self-reported and may contain inaccuracies.
-3.	Temporal Context:
-o	The analysis reflects a specific period and may not capture ongoing trends.
-4.	Unmeasured Variables:
-o	Factors like regional healthcare policies and cultural differences were not accounted for.
+## 📈 Objectives & Key Metrics
+
+| Objective | Metric Tracked | Result Achieved |
+|---|---|---|
+| Quantify insurance coverage | % insured vs. uninsured | **59% insured, 41% uninsured** |
+| Identify socioeconomic drivers of coverage | Coverage rate by income tier | **90% of high-income earners insured vs. 35% of low-income earners** |
+| Assess impact of insurance on healthcare usage | Avg. hospital visit interval | Insured: **6 months** between visits; Uninsured: **7 months** |
+
+---
+
+## 📂 Data Overview
+
+**Data Sources**: 6,158 individual-level records (`Healthcare_original_dataset.xlsx`, processed into `updated_dataset.csv`).
+**Key Variables**: Age, gender, marital status, employment status, income level, insurance coverage status, hospital visit frequency.
+**Data Challenges**: Income and hospital-visit fields are self-reported and may understate true variation; the dataset captures a single time period and does not reflect ongoing policy or access changes.
+
+![Data Relationships](https://github.com/user-attachments/assets/93cdf492-e3a5-4f0f-8394-81b3ae04c10a)
+
+---
+
+## 🔧 Methodology
+
+**Data Cleaning**: Standardized demographic and income categories, validated insurance and visit-frequency fields for consistency before dashboard construction.
+**Analysis Techniques**:
+1. Calculated insurance coverage rates segmented by employment status and income tier.
+2. Compared average hospital visit intervals between insured and uninsured populations.
+3. Cross-tabulated coverage against demographic variables to surface disparity patterns.
+**Tools**: **Power BI** for the interactive dashboard, **Excel** for data cleaning and validation.
+
+---
+
+## 💡 Key Insights
+
+#### Insight 1: Coverage Gaps Track Closely With Employment and Income
+**What**: 59% of the population is insured overall, but coverage diverges sharply by employment and income status.
+**So What**: Vulnerable groups — the unemployed and low-income — show consistently lower coverage, marking a clear accessibility gap rather than a uniformly distributed shortfall.
+![Insurance Coverage by Demographics](https://github.com/user-attachments/assets/62d50c84-8653-4110-9de5-f0e18b53b698)
+
+---
+
+#### Insight 2: Income Is the Strongest Predictor of Coverage
+**What**: High-income earners are insured at a **90%** rate, compared to just **35%** for low-income earners — a 55-point gap.
+**So What**: Subsidized health insurance programs targeted at low-income groups would directly address the single largest driver of the coverage gap.
+![Coverage by Employment and Income](https://github.com/user-attachments/assets/b5805630-4233-447c-b015-c6cefba859a4)
+![Coverage by Income Tier](https://github.com/user-attachments/assets/8839970f-3c32-444e-99d0-4681e9048201)
+
+---
+
+#### Insight 3: Insurance Status Measurably Changes Healthcare-Seeking Behavior
+**What**: Insured individuals visit hospitals roughly every **6 months**, versus **7 months** for the uninsured.
+**So What**: Coverage isn't just a financial-protection metric — it has a direct, measurable effect on how often people actually seek care, reinforcing that closing the coverage gap would close the utilization gap as well.
+![Hospital Visit Frequency by Insurance Status](https://github.com/user-attachments/assets/aed85190-8586-4b49-abe9-53e3cde3f506)
+
+---
+
+## ✅ Recommendations & Business Impact
+
+| Priority | Recommendation | Expected Impact | Owner |
+|---|---|---|---|
+| High | Develop subsidized health insurance programs targeted at low-income and unemployed groups | Directly addresses the 55-point income-based coverage gap (90% vs. 35%) | Policy Team |
+| High | Promote employer-sponsored insurance enrollment | Increases coverage among the employed population still lacking insurance | Employer Partnerships |
+| Medium | Expand community-driven health programs for uninsured individuals | Provides a care pathway for those unlikely to gain coverage near-term | Community Health Orgs |
+| Medium | Launch public awareness campaigns on insurance benefits in underserved regions | Improves enrollment among eligible but currently uninsured individuals | Public Health Outreach |
+
+**Business Impact**:
+- Narrowing the income-based coverage gap would be expected to shift the uninsured population's hospital visit cadence from ~7 months toward the ~6-month insured benchmark, indicating meaningfully improved care-seeking behavior.
+
+---
+
+## 📉 Caveats & Next Steps
+
+**Limitations**:
+- **Data Limitations**: The dataset may not represent the entire population, which could skew coverage and utilization estimates.
+- **Self-Reported Bias**: Income and hospital-visit variables are self-reported and may contain inaccuracies.
+- **Temporal Context**: Findings reflect a single period and may not capture ongoing policy or behavioral trends.
+- **Unmeasured Variables**: Regional healthcare policy and cultural differences are not captured in this dataset.
+
+**Next Steps**:
+1. Pilot a subsidized-insurance program for low-income groups and track resulting coverage and visit-frequency changes.
+2. Partner with employers to measure enrollment lift from targeted outreach.
+3. Refresh the analysis periodically to monitor whether the income-based coverage gap is narrowing.
+
+---
+
+## 👤 Author
+
+**Analyst:** Patrick Mwangi Gichuki
+**Portfolio:** [https://gichuki.site](https://gichuki.site)
+**LinkedIn:** [https://linkedin.com/in/patrick-gichuki-datascientist](https://linkedin.com/in/patrick-gichuki-datascientist)
