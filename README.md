@@ -1,4 +1,4 @@
-# Insurance Coverage and Healthcare Usage Analysis
+# Insurance Coverage and Hospital Visit Frequency Analysis
 
 **Industry**: Public Health / Health Insurance
 **Tools**: Power BI, Excel
